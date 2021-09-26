@@ -1,0 +1,75 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">Dress Me</string>
+    <string name="welcome_msg">Welcome to Dress Me !</string>
+    <string name="dressing">Dressing</string>
+
+    <!-- type of cloth -->
+    <string name="Tops">Tops</string>
+    <string name="Pants">Pants</string>
+    <string name="Shoes">Shoes</string>
+
+    <!-- Popup titles -->
+    <string name="add_top">Add a top</string>
+    <string name="add_pants">Add pants</string>
+    <string name="add_shoes">Add shoes</string>
+
+    <!-- Popup content -->
+    <string name="type">Type :</string>
+
+    <string name="color">Color :</string>
+    <string name="selectColor">Select a color</string>
+
+    <string name="kind">Kind :</string>
+    <string name="casual">Casual</string>
+    <string name="chic">Chic</string>
+    <string name="sport">Sport</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Popup toaster -->
+    <string name="success_add_msg">Outfit successfully added</string>
+    <string name="error_add_msg">Please fill any empty fields</string>
+
+    <!-- Empty types -->
+    <string name="noTops">You don’t have any tops yet</string>
+    <string name="noPants">You don’t have any pants yet</string>
+    <string name="noShoes">You don’t have any shoes yet</string>
+
+    <!-- Delete clothe -->
+    <string name="deleteClothe">Are you sure you want to delete this outfit ?</string>
+    <string name="success_delete_msg">Outfit successfully deleted</string>
+
+    <!-- Toolbar -->
+    <string name="total">Total :</string>
+
+    <!-- Too many clothes -->
+    <string name="too_many_tops_msg">You have too many tops</string>
+    <string name="too_many_pants_msg">You have too many pants</string>
+    <string name="too_many_shoes_msg">You have too many shoes</string>
+
+    <!-- Weather -->
+    <string name="noWeather">No current weather</string>
+    <string name="noWifi">WiFi connection failure</string>
+    <string name="notAvailable">No weather available</string>
+    <string name="noLocation">Unable to retrieve location</string>
+    <string name="upToDate">Weather already up to date</string>
+
+    <!-- Advice -->
+    <string name="sunglasses">Sunglasses are recommended</string>
+    <string name="umbrella">You should not forget your umbrella !</string>
+    <string name="sunscreen">It\'s hot, don\'t forget to put on sunscreen</string>
+    <string name="scarfGloves">Don\'t forget your scarf and gloves</string>
+
+    <!-- Cloth generation -->
+    <string name="notEnoughClothes">Not enough clothes</string>
+    <string name="noGeneratedOutfit">No generated outfit</string>
+    <string name="casualGenerated">Casual outfit generated</string>
+    <string name="chicGenerated">Chic outfit generated</string>
+    <string name="sportGenerated">Sport outfit generated</string>
+    <string name="noMatching">No matching outfit</string>
+
+    <string name="GenerateOutfit">Generate outfit :</string>
+
+</resources>

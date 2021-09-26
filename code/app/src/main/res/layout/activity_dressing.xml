@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DressingActivity"
+    android:background="@drawable/plank"
+    >
+
+    <!-- Action Bar -->
+    <include
+        android:id="@+id/toolbar_dressing"
+        layout="@layout/toolbar_activity_dressing"
+        />
+
+    <!-- Create the 3 buttons for the 3 types of clothes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_tops"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tshirt_icon"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_border_selector"
+            android:padding="12dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="25dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_pants"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pants_icon"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_border_selector"
+            android:padding="12dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="25dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_shoes"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/shoes_icon"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_border_selector"
+            android:padding="12dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

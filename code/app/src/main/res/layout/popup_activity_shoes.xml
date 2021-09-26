@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <!-- view flipper to flip with the popup color table -->
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- root layout -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/shoes_icon" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/add_shoes"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- type section -->
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/title"
+                android:layout_marginTop="15dp"
+                android:text="@string/type"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                />
+
+            <!-- layouts containing all the shoes button types -->
+            <LinearLayout
+                android:id="@+id/clothes1Line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/type"
+                >
+
+                <ImageButton
+                    android:id="@+id/shoes"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shoes"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:backgroundTint="@color/btnDefault"
+                    android:background="@drawable/button_default"
+                    />
+
+                <ImageButton
+                    android:id="@+id/boots"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/boots"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:backgroundTint="@color/btnDefault"
+                    android:background="@drawable/button_default"
+                    />
+
+                <ImageButton
+                    android:id="@+id/tong"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tong"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:backgroundTint="@color/btnDefault"
+                    android:background="@drawable/button_default"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clothes2Line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/clothes1Line"
+                >
+
+                <ImageButton
+                    android:id="@+id/highheel"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/highheel"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:backgroundTint="@color/btnDefault"
+                    android:background="@drawable/button_default"
+                    />
+
+                <ImageButton
+                    android:id="@+id/basket"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/basket"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:backgroundTint="@color/btnDefault"
+                    android:background="@drawable/button_default"
+                    />
+
+                <ImageButton
+                    android:id="@+id/sandal"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sandal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:backgroundTint="@color/btnDefault"
+                    android:background="@drawable/button_default"
+                    />
+
+
+            </LinearLayout>
+
+            <!-- color section -->
+            <TextView
+                android:id="@+id/colortitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/clothes2Line"
+                android:layout_marginTop="10dp"
+                android:text="@string/color"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/colorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/colortitle"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/noColor"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="visible"
+                        android:elevation="3dp"
+                        android:src="@drawable/no_color"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="2dp"
+                        />
+
+                    <Button
+                        android:id="@+id/color"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/transparent"
+                        android:elevation="50dp"
+                        android:clickable="false"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="2dp"
+                        />
+
+                    <ImageButton
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/selectColor"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="nextView"
+                    android:text="@string/selectColor"
+                    android:background="@drawable/button_default_selector"
+                    />
+
+            </LinearLayout>
+
+            <!-- kind section -->
+            <TextView
+                android:id="@+id/kind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/colorLayout"
+                android:layout_marginTop="10dp"
+                android:text="@string/kind"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                />
+
+            <!-- layout containing the 3 kind buttons -->
+            <LinearLayout
+                android:id="@+id/kindLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/kind"
+                >
+
+                <Button
+                    android:id="@+id/btn_casual"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casual"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_default"
+                    android:backgroundTint="@color/btnDefault"
+                    />
+
+                <Button
+                    android:id="@+id/btn_chic"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chic"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_default"
+                    android:backgroundTint="@color/btnDefault"
+                    />
+
+                <Button
+                    android:id="@+id/btn_sport"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/sport"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_default"
+                    android:backgroundTint="@color/btnDefault"
+                    />
+
+            </LinearLayout>
+
+            <!-- btn ok to add new shoes -->
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kindLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_background"
+                android:text="@string/ok"
+                android:textColor="@color/red" />
+
+            <!-- btn cancel to cancel the creation of a new shoes -->
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kindLayout"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_background"
+                android:text="@string/cancel"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <!-- include the popup color table in the flipper to flip on if the btn select a color is clicked -->
+        <include
+            android:id="@+id/colorDialog"
+            layout="@layout/popup_color_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ViewFlipper>
+
+</RelativeLayout>

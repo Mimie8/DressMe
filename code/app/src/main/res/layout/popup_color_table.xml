@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <!-- root layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        >
+
+        <!-- first line of buttons -->
+        <LinearLayout
+            android:id="@+id/first_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_color_yellow"
+                android:tag="#FFF168"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/yellow"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_moutarde"
+                android:tag="#D1B606"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/moutarde"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_lightOrange"
+                android:tag="#ED7F10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightOrange"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_darkOrange"
+                android:tag="#CC5500"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/darkOrange"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_beige"
+                android:tag="#FFE4C4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/beige"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+        </LinearLayout>
+
+        <!-- second line of buttons -->
+        <LinearLayout
+            android:id="@+id/second_line"
+            android:layout_below="@id/first_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_color_lightRed"
+                android:tag="#FF3030"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightRed"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_red"
+                android:tag="#C40101"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/red"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_bordeaux"
+                android:tag="#6D071A"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/bordeaux"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_lightBrown"
+                android:tag="#856D4D"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightBrown"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_darkBrown"
+                android:tag="#4E3D28"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/darkBrown"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+        </LinearLayout>
+
+        <!-- third line of buttons -->
+        <LinearLayout
+            android:id="@+id/third_line"
+            android:layout_below="@id/second_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            >
+
+            <Button
+                android:id="@+id/btn_color_lightPink"
+                android:tag="#FFB6B8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightPink"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_pink"
+                android:tag="#FD6C9E"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/pink"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_magenta"
+                android:tag="#DB0073"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/magenta"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_lightMauve"
+                android:tag="#8370DB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightMauve"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_mauve"
+                android:tag="#5A2BE2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/mauve"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+        </LinearLayout>
+
+        <!-- fourth line of buttons -->
+        <LinearLayout
+            android:id="@+id/fourth_line"
+            android:layout_below="@id/third_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_color_lightBlue"
+                android:tag="#8CC6D7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightBlue"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_blueSky"
+                android:tag="#318CE7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/blueSky"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_darkBlue"
+                android:tag="#1B019B"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/darkBlue"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_lightGreen"
+                android:tag="#9FE855"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightGreen"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+
+            <Button
+                android:id="@+id/btn_color_darkGreen"
+                android:tag="#096A09"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/darkGreen"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+        </LinearLayout>
+
+        <!-- fifth line of buttons -->
+        <LinearLayout
+            android:id="@+id/fifth_line"
+            android:layout_below="@id/fourth_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_color_white"
+                android:tag="#ffffff"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/white"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_lightGrey"
+                android:tag="#999999"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/lightGrey"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_darkGrey"
+                android:tag="#555555"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/darkGrey"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_black"
+                android:tag="#000000"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/black"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn_color_kaki"
+                android:tag="#5A6521"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@color/kaki"
+                android:onClick="previousView"
+                android:elevation="2dp"
+                />
+
+        </LinearLayout>
+
+        <!-- cancel the selection of a color and get to the previous flipper view -->
+        <Button
+            android:id="@+id/btn_color_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fifth_line"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background"
+            android:text="@string/cancel"
+            android:textColor="@color/red"
+            android:onClick="previousView"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- My colors -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lightGrey">#999999</color>
+    <color name="middleGrey">#555555</color>
+    <color name="darkGrey">#333333</color>
+    <color name="lightBrown">#856D4D</color>
+    <color name="darkBrown">#4E3D28</color>
+    <color name="marron">#5B3C11</color>
+    <color name="beige">#FFE4C4</color>
+    <color name="yellow">#FFF168</color>
+    <color name="moutarde">#D1B606</color>
+    <color name="lightPink">#FFB6B8</color>
+    <color name="pink">#FD6C9E</color>
+    <color name="magenta">#DB0073</color>
+    <color name="lightMauve">#8370DB</color>
+    <color name="mauve">#4A2BE2</color>
+    <color name="lightRed">#FF3030</color>
+    <color name="red">#C40101</color>
+    <color name="darkRed">#9d0101</color>
+    <color name="bordeaux">#6D071A</color>
+    <color name="lightOrange">#ED7F10</color>
+    <color name="darkOrange">#CC5500</color>
+    <color name="lightGreen">#9FE855</color>
+    <color name="darkGreen">#096A09</color>
+    <color name="kaki">#5A6521</color>
+    <color name="lightBlue">#8CC6D7</color>
+    <color name="blueSky">#318CE7</color>
+    <color name="darkBlue">#1B019B</color>
+    <color name="transparent99">#99000000</color>
+    <color name="transparent98">#98000000</color>
+    <color name="transparent80">#80000000</color>
+    <color name="transparent70">#70000000</color>
+    <color name="transparent50">#50000000</color>
+    <color name="transparent40">#40000000</color>
+    <color name="transparent30">#30000000</color>
+    <color name="transparent20">#20000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="btnDefault">#DCDCDC</color>
+
+</resources>

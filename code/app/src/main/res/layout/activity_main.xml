@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/plank">
+
+    <!-- Action Bar -->
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_activity_main"
+        />
+
+    <!-- Advice concerning the weather -->
+    <LinearLayout
+        android:id="@+id/advice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_main"
+        android:orientation="vertical"
+        android:background="@color/transparent99"
+        >
+
+        <TextView
+            android:id="@+id/advice_sunglasses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/sunglasses"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/advice_umbrella"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/umbrella"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/advice_sunscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/sunscreen"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/advice_scarfGloves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="@string/scarfGloves"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <!-- layout containing the weather section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent70"
+        android:layout_below="@id/advice"
+        android:elevation="4dp"
+        android:gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            >
+
+            <!-- layout containing every weather info -->
+            <RelativeLayout
+                android:id="@+id/currentWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/infoMeteo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                    <!-- icon of the current weather -->
+                    <ImageView
+                        android:id="@+id/iconMeteo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        />
+                    <!-- degree of the current weather -->
+                    <TextView
+                        android:id="@+id/degreeMeteo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="45sp"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="°C"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        />
+                    <!-- layout containing the maximum and minimum degrees -->
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/maxDegree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="°"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="35dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="―"
+                            android:textSize="40sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="2dp"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/minDegree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textColor="@color/white"
+                            android:layout_below="@id/maxDegree"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="°"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="35dp"
+                            android:layout_below="@id/maxDegree"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <!-- description of the current weather state -->
+                <TextView
+                    android:id="@+id/descriptionMeteo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/infoMeteo"
+                    android:layout_marginStart="5dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <!-- Text to informe that there is no weather -->
+            <TextView
+                android:id="@+id/TVnoWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:text="@string/noWeather"
+                android:visibility="visible"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                />
+
+            <!-- Button to actualise the weather -->
+            <ImageButton
+                android:id="@+id/btn_actualise"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background_darker"
+                android:src="@drawable/actualise"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- layout containing the generated outfit elements -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/btn_dressing"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/generatedOutfitLayout"
+        android:visibility="gone"
+        >
+        <!-- layout containing the top elements -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/generatedTopLayout"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/generatedTop"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+            <Button
+                android:id="@+id/generatedTopColor"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_default"
+                />
+
+        </LinearLayout>
+        <!-- layout containing the pants elements -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/generatedPantsLayout"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/generatedPants"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+            <Button
+                android:id="@+id/generatedPantsColor"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_default"
+                />
+
+        </LinearLayout>
+        <!-- layout containing the shoes elements -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/generatedShoesLayout"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/generatedShoes"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+            <Button
+                android:id="@+id/generatedShoesColor"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_default"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Button informing that there is no generated outfit -->
+    <TextView
+        android:id="@+id/noGeneratedOutfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noGeneratedOutfit"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_above="@id/btn_dressing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white"
+        android:padding="7dp"
+        android:visibility="visible"
+        />
+
+    <!-- Dressing button -->
+    <Button
+        android:id="@+id/btn_dressing"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/button_border_selector"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:paddingRight="30dp"
+        android:text="@string/dressing"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:ignore="ContentDescription"
+        android:layout_above="@id/generation"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- Layout containing the generations panel -->
+    <RelativeLayout
+        android:id="@+id/generation"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        >
+
+        <TextView
+            android:id="@+id/generate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/GenerateOutfit"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_btn_generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/generate_title"
+            >
+
+            <!-- Generate buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+
+                <Button
+                    android:id="@+id/btn_generate_casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:background="@drawable/button_border_selector"
+                    android:paddingTop="5dp"
+                    android:text="@string/casual"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    tools:ignore="ContentDescription"
+                    android:backgroundTint="@color/red"
+                    />
+
+                <Button
+                    android:id="@+id/btn_generate_chic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:background="@drawable/button_border_selector"
+                    android:paddingTop="5dp"
+                    android:text="@string/chic"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    tools:ignore="ContentDescription"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/red"
+                    />
+
+                <Button
+                    android:id="@+id/btn_generate_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:background="@drawable/button_border_selector"
+                    android:paddingTop="5dp"
+                    android:text="@string/sport"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    tools:ignore="ContentDescription"
+                    android:backgroundTint="@color/red"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

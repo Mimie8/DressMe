@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="91dp"
+        >
+        <!-- scroll view to scroll between every shoes -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Linear layout containing every shoes and sections -->
+            <LinearLayout
+                android:id="@+id/LLLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/noShoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/noShoes"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_default"
+                    android:backgroundTint="@color/transparent40"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    />
+                <!-- Linear layout containing every casual shoes and the text of the casual section -->
+                <LinearLayout
+                    android:id="@+id/LLCasual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/casualTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/casual"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_default"
+                        android:gravity="center"
+                        android:backgroundTint="@color/transparent40"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+                <!-- Linear layout containing every chic shoes and the text of the chic section -->
+                <LinearLayout
+                    android:id="@+id/LLChic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/chicTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/chic"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_default"
+                        android:gravity="center"
+                        android:backgroundTint="@color/transparent40"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+                <!-- Linear layout containing every sport shoes and the text of the sport section -->
+                <LinearLayout
+                    android:id="@+id/LLSport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/sportTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/sport"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_default"
+                        android:gravity="center"
+                        android:backgroundTint="@color/transparent40"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

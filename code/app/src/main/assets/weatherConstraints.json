@@ -1,0 +1,57 @@
+{
+  "casual":
+  {
+    "tshirt": [],
+    "shirt": [],
+    "sweatshirt": [{"maxTemp": 14},{"maxTemp":17, "weathers":["broken clouds", "shower rain", "rain", "thunderstorm", "snow", "mist"]}],
+    "tanktop": [{"minTemp": 20, "weathers":["clear sky", "few clouds", "scattered clouds"]}],
+    "pullover": [{"maxTemp": 14},{"maxTemp":17, "weathers":["broken clouds", "shower rain", "rain", "thunderstorm", "snow", "mist"]}],
+    "dress": [{"minTemp": 15, "weathers":["clear sky", "few clouds", "scattered clouds", "broken clouds", "mist"]}],
+    
+    "pants": [{"maxTemp": 28}],
+    "shorts": [{"minTemp": 18, "weathers": ["clear sky", "few clouds", "scattered clouds"]}],
+    "skirt": [{"minTemp": 16, "weathers": ["clear sky", "few clouds", "scattered clouds"]}],
+    
+    "shoes": [],
+    "boots": [{"weathers": ["rain", "shower rain", "snow"]}, {"maxTemp": 14}],
+    "tong": [{"minTemp": 26, "weathers":["clear sky", "few clouds", "scattered clouds"]}],
+    "basket": [{"maxTemp": 28}],
+    "highheel": [],
+    "sandal": [{"minTemp": 18, "weathers":["clear sky", "few clouds", "scattered clouds", "broken clouds"]}]
+    
+  },
+  
+  "chic":
+    {
+    "tshirt": [],
+    "shirt": [],
+    "pullover": [{"maxTemp": 18}],
+    "dress": [{"minTemp": 15, "weathers":["clear sky", "few clouds", "scattered clouds", "broken clouds", "mist"]}],
+    
+    "pants": [{"maxTemp": 28}],
+    "shorts": [{"minTemp": 18, "weathers": ["clear sky", "few clouds", "scattered clouds"]}],
+    "skirt": [{"minTemp": 14, "weathers": ["clear sky", "few clouds", "scattered clouds"]}],
+    
+    "shoes": [],
+    "boots": [{"weathers": ["rain", "shower rain", "snow"]}, {"maxTemp": 14}],
+    "basket": [{"maxTemp": 28}],
+    "highheel": [],
+    "sandal": [{"minTemp": 18, "weathers":["clear sky", "few clouds", "scattered clouds", "broken clouds"]}]
+    
+  },
+  
+  "sport":
+    {
+    "tshirt": [],
+    "sweatshirt": [{"maxTemp": 14},{"maxTemp":17, "weathers":["broken clouds", "shower rain", "rain", "thunderstorm", "snow", "mist"]}],
+    "tanktop": [{"minTemp": 18, "weathers":["clear sky", "few clouds", "scattered clouds"]}],
+    "pullover": [{"maxTemp": 14},{"maxTemp":17, "weathers":["broken clouds", "shower rain", "rain", "thunderstorm", "snow", "mist"]}],
+    
+    "pants": [{"maxTemp": 28}],
+    "shorts": [{"minTemp": 14}, {"minTemp": 10, "weathers": ["clear sky", "few clouds", "scattered clouds"]}],
+    
+    "shoes": [],
+    "basket": []
+    
+  }
+}

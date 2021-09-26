@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- programmatically reserved ids -->
+<resources>
+    <item name="casualSct" type="id"/>
+    <item name="chicSct" type="id"/>
+    <item name="sportSct" type="id"/>
+    <item name="noCloth" type="id"/>
+</resources>
